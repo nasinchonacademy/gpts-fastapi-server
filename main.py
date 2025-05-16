@@ -5,7 +5,7 @@ import numpy as np
 import json
 from sentence_transformers import SentenceTransformer
 
-model = SentenceTransformer("hkunlp/instructor-xl")
+model = SentenceTransformer("all-MiniLM-L6-v2")
 index = faiss.read_index("index/vec.index")
 
 with open("index/chunks.json", "r", encoding="utf-8") as f:
